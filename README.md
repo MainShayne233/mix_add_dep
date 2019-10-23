@@ -6,7 +6,14 @@ A utility for programtically adding Elixir dependencies to a `mix.exs` file.
 
 ## Usage
 
-You can use this in two ways:
+You can use this in two ways: either via an executable, or in an Elixir app.
+
+Either way, you pass in the dependencies as the string represenation of what you'd add to a `mix.exs` file. Valid examples include:
+- `"{:decimal, \"~> 1.8\"}"`
+- `"{:decimal, github: \"ericmj/decimal\"}"`
+- `"{:decimal, path: \"../../some/path\"}"`
+- etc
+
 
 ### Use as executable (escript)
 
