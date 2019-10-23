@@ -1,7 +1,7 @@
 defmodule MixAddDep do
   @without_parens_pattern ~r/(defmodule|use|require|import|def|defp)\((.*)\)/
 
-  def main(deps) do
+  def run(deps) do
     fetch_mix_file!()
     |> parse!()
     |> add_deps!(deps)
